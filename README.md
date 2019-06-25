@@ -4,7 +4,7 @@
 by Patrick Thomas Mitchell  
 http://www.engineeringshock.com/the-troll-project-page.html  
 
-Library version 1.0.0 June 24, 2019 by LeRoy Miller  
+Library version 1.0.2 June 25, 2019 by LeRoy Miller  
 
 If you find this or any of my projects useful or enjoyable please support me.  
 Anything I do get goes to buy more parts and make more/better projects.  
@@ -18,7 +18,10 @@ https://ko-fi.com/lfmiller
 
 This is very much a work in progress, and by no means a finished library.  
 
-## Usage
+## Change Log
+
+V1.0.0 June 24, 2019 - first release, basic functionality, limited to just an all sound example.  
+V1.0.2 June 25, 2019 - slightly updated functionality, added function to read button, added a couple more examples.  
 
 ## Contributing
 

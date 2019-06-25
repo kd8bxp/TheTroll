@@ -3,7 +3,7 @@
 by Patrick Thomas Mitchell
 http://www.engineeringshock.com/the-troll-project-page.html
 
-Library version 1.0.0 June 24, 2019 by LeRoy Miller
+Library version 1.0.2 June 24, 2019 by LeRoy Miller
 
 If you find this or any of my projects useful or enjoyable please support me.  
 Anything I do get goes to buy more parts and make more/better projects.  
@@ -37,6 +37,10 @@ int timings[58] = {4250, 4500, 3000, 10000,13500,5000,3000,8500,6000,4000,3000,2
 
 troll::troll(bool SPEAKER) {
 _SPEAKER = SPEAKER;
+
+_LASTBUTTONSTATE = LOW; //for debounce on pin 0
+_LASTDEBOUNCETIME = 0;
+_DEBOUNCEDELAY = 50;
 }
 
 void troll::begin() { 
@@ -76,4 +80,30 @@ SPI.transfer(0x00);
 }
   digitalWrite(CS,HIGH);
   delay(wait); 
+}
+
+int troll::button() {
+  return digitalRead(SELECT);
+  /*
+  int reading = digitalRead(SELECT);
+
+  // If the switch changed, due to noise or pressing:
+  if (reading != _LASTBUTTONSTATE) {
+    // reset the debouncing timer
+    _LASTDEBOUNCETIME = millis();
+  }
+
+  if ((millis() - _LASTDEBOUNCETIME) > _DEBOUNCEDELAY) {
+    // whatever the reading is at, it's been there for longer than the debounce
+    // delay, so take it as the actual current state:
+
+    // if the button state has changed:
+    if (reading != _BUTTONSTATE) {
+      _BUTTONSTATE = reading;
+      return _BUTTONSTATE;
+    }
+    _LASTBUTTONSTATE = reading;
+    return ;
+}
+*/
 }
