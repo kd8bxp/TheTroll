@@ -3,7 +3,7 @@
 by Patrick Thomas Mitchell
 http://www.engineeringshock.com/the-troll-project-page.html
 
-Library version 1.0.2 June 24, 2019 by LeRoy Miller
+Library version 1.0.3 June 26, 2019 by LeRoy Miller
 
 If you find this or any of my projects useful or enjoyable please support me.  
 Anything I do get goes to buy more parts and make more/better projects.  
@@ -106,4 +106,31 @@ int troll::button() {
     return ;
 }
 */
+}
+
+int troll::readSwitch() {
+  /* This will return a number between 0 and 15 which means
+     that it's a 4 bit binary number -  with sw1 being in the 8th place
+     and sw4 being in the ones place.
+
+     SW1, SW2, SW3, SW4
+      8    4    2    1
+
+     if all switches are LOW they return 15, if all are HIGH they return 0
+   */
+
+int temp = 0;
+   if (digitalRead(SW1) == LOW) {
+    temp = temp + 8;
+   } 
+  if (digitalRead(SW2) == LOW) {
+    temp = temp + 4;
+  }
+  if (digitalRead(SW3) == LOW) {
+    temp = temp + 2;
+  }
+  if (digitalRead(SW4) == LOW) {
+    temp = temp + 1;
+  }
+  return temp;
 }

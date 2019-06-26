@@ -3,7 +3,7 @@
 by Patrick Thomas Mitchell
 http://www.engineeringshock.com/the-troll-project-page.html
 
-Library version 1.0.2 June 24, 2019 by LeRoy Miller
+Library version 1.0.3 June 26, 2019 by LeRoy Miller
 
 If you find this or any of my projects useful or enjoyable please support me.  
 Anything I do get goes to buy more parts and make more/better projects.  
@@ -36,10 +36,10 @@ This program is free software: you can redistribute it and/or modify
 #include <SPI.h>
 
 //Pin Setup
-#define SW4 5
-#define SW3 6
-#define SW2 7
-#define SW1 8
+#define SW4 8 //5
+#define SW3 7 //6
+#define SW2 6 //7
+#define SW1 5 //8
 #define LED 2
 #define IN 9  //External Trigger Pin
 #define SELECT 0
@@ -126,6 +126,7 @@ troll(bool SPEAKER);
 void begin();
 void sound(int value, int wait);
 int button();
+int readSwitch();
 };
 
 #endif

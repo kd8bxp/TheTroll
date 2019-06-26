@@ -22,6 +22,7 @@ This is very much a work in progress, and by no means a finished library.
 
 V1.0.0 June 24, 2019 - first release, basic functionality, limited to just an all sound example.  
 V1.0.2 June 25, 2019 - slightly updated functionality, added function to read button, added a couple more examples.  
+V1.0.3 June 26, 2019 - added example for using the DIP switch, added a function to read the DIP switch.  
 
 ## Contributing
 
