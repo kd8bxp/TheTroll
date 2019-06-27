@@ -4,7 +4,9 @@
 by Patrick Thomas Mitchell  
 http://www.engineeringshock.com/the-troll-project-page.html  
 
-Library version 1.0.2 June 25, 2019 by LeRoy Miller  
+Library version 1.0.4 June 26, 2019 by LeRoy Miller  
+
+Video: https://youtu.be/1dREwgjK6XQ
 
 If you find this or any of my projects useful or enjoyable please support me.  
 Anything I do get goes to buy more parts and make more/better projects.  
@@ -23,6 +25,7 @@ This is very much a work in progress, and by no means a finished library.
 V1.0.0 June 24, 2019 - first release, basic functionality, limited to just an all sound example.  
 V1.0.2 June 25, 2019 - slightly updated functionality, added function to read button, added a couple more examples.  
 V1.0.3 June 26, 2019 - added example for using the DIP switch, added a function to read the DIP switch.  
+V1.0.4 June 26, 2019 - added "Program" example, added extras folder, updated timings in library.  
 
 ## Contributing
 

@@ -3,7 +3,7 @@
 by Patrick Thomas Mitchell
 http://www.engineeringshock.com/the-troll-project-page.html
 
-Library version 1.0.3 June 26, 2019 by LeRoy Miller
+Library version 1.0.4 June 26, 2019 by LeRoy Miller
 
 If you find this or any of my projects useful or enjoyable please support me.  
 Anything I do get goes to buy more parts and make more/better projects.  
@@ -104,10 +104,10 @@ This program is free software: you can redistribute it and/or modify
 #define FROG 0x33, 6000
 #define SCREAM_GIRL 0x34, 2500
 #define MOMMY 0x35, 5500
-#define KNOCK 0x36, 7000
-#define FOOT_STEPS 0x37, 3000 //Timings not listed...
-#define RED_ALERT 0x38,3000  //The timing maybe off for this one too
-#define HEADLIGHTS 0x39, 2500 //the timing probably is off for this one
+#define KNOCK 0x36, 8000
+#define FOOT_STEPS 0x37, 10000 //Timings not listed...
+#define RED_ALERT 0x38,3750  //The timing maybe off for this one too
+#define HEADLIGHTS 0x39, 10000 //the timing probably is off for this one
 
 extern int timings[]; // = {4250, 4500, 3000, 10000,13500,5000,3000,8500,6000,4000,3000,2000,1000,1000,1000,1500,1000,1000,1000,1000,1000,1000,1000,1000,1000,1000,1000,1000,1000,1000,1000,1000,1000,1500,1000,1500,1500,1000,1500,1000,6500,4000,3500,1500,3500,13000,2000,4000,11000,500,10500,6000,2500,5500,7000,3000,2500};
 

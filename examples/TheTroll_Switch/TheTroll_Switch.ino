@@ -28,7 +28,7 @@ This program is free software: you can redistribute it and/or modify
 
 /* This is still a work in progress, stay tune for updates */
 
-#include "troll.h"
+#include <troll.h>
 
 troll t(true); // Using the Internal Speaker will rampdown after each use this saves power
 
