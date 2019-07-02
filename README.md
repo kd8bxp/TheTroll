@@ -4,7 +4,7 @@
 by Patrick Thomas Mitchell  
 http://www.engineeringshock.com/the-troll-project-page.html  
 
-Library version 1.0.4 June 26, 2019 by LeRoy Miller  
+Library version 1.0.6 July 2, 2019 by LeRoy Miller  
 
 Video: https://youtu.be/1dREwgjK6XQ
 
@@ -26,6 +26,8 @@ V1.0.0 June 24, 2019 - first release, basic functionality, limited to just an al
 V1.0.2 June 25, 2019 - slightly updated functionality, added function to read button, added a couple more examples.  
 V1.0.3 June 26, 2019 - added example for using the DIP switch, added a function to read the DIP switch.  
 V1.0.4 June 26, 2019 - added "Program" example, added extras folder, updated timings in library.  
+V1.0.4a/1.0.5 June 28 - July 2, 2019 - Added extra example for using LBT over I2C, added external trigger example.  
+V1.0.6 July 2, 2019 - Updated External Trigger Example, added externalTrigger() function to library.  
 
 ## Contributing
 
