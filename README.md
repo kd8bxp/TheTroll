@@ -28,6 +28,7 @@ V1.0.3 June 26, 2019 - added example for using the DIP switch, added a function 
 V1.0.4 June 26, 2019 - added "Program" example, added extras folder, updated timings in library.  
 V1.0.4a/1.0.5 June 28 - July 2, 2019 - Added extra example for using LBT over I2C, added external trigger example.  
 V1.0.6 July 2, 2019 - Updated External Trigger Example, added externalTrigger() function to library.  
+V1.0.7 July 3/July 4, 2019 - Added Spooky Demo/Example, added example of using PWM on the External Trigger Pin  
 
 ## Contributing
 
