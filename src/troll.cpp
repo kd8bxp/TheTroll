@@ -3,7 +3,7 @@
 by Patrick Thomas Mitchell
 http://www.engineeringshock.com/the-troll-project-page.html
 
-Library version 1.0.6 July 2, 2019 by LeRoy Miller
+Library version 1.0.8 July 5, 2019 by LeRoy Miller
 
 If you find this or any of my projects useful or enjoyable please support me.  
 Anything I do get goes to buy more parts and make more/better projects.  
@@ -33,7 +33,8 @@ This program is free software: you can redistribute it and/or modify
 #include "troll.h"
 #include <SPI.h>
 
-int timings[58] = {4250, 4500, 3000, 10000,13500,5000,3000,8500,6000,4000,3000,2000,1000,1000,1000,1500,1000,1000,1000,1000,1000,1000,1000,1000,1000,1000,1000,1000,1000,1000,1000,2000,1500,2000,1000,1500,1500,1000,2000,1000,6500,4000,3500,1500,3500,13000,4000,4000,11000,500,10500,6000,2500,5500,8000,10000,3750,10000};
+int timings[58] = {4250, 4500, 4000, 10000,13500,5000,3500,8500,6000,4000,3000,2000,1000,1000,1000,1500,1000,1000,1000,1000,1000,1000,1000,1000,1000,1000,1000,1000,1000,1000,1000,1000,1000,1500,
+1000,1500,1500,1000,1500,1000,6500,4000,3500,1500,3500,13000,3000,4000,11000,500,10500,6000,2500,5500,8000,10000,3750,4000};
 
 troll::troll(bool SPEAKER) {
 _SPEAKER = SPEAKER;

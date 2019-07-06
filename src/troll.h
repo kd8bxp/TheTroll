@@ -3,7 +3,7 @@
 by Patrick Thomas Mitchell
 http://www.engineeringshock.com/the-troll-project-page.html
 
-Library version 1.0.6 July 2, 2019 by LeRoy Miller
+Library version 1.0.8 July 5, 2019 by LeRoy Miller
 
 If you find this or any of my projects useful or enjoyable please support me.  
 Anything I do get goes to buy more parts and make more/better projects.  
@@ -51,21 +51,21 @@ This program is free software: you can redistribute it and/or modify
 
 //Sound List and Play Timings
 #define EVIL_LAUGH1 0x00, 4250
-#define EVIL_LAUGH2 0x01, 4500
-#define MEOW 0x02, 3000
+#define EVIL_LAUGH2 0x01, 4500 //5 seconds maybe
+#define MEOW 0x02, 4000 //4 seconds changed from 3 seconds
 #define GROWL 0x03, 10000
 #define EVIL_LAUGH3 0x04, 13500
 #define DYING 0x05, 5000
-#define NOOOO 0x06, 3000
+#define NOOOO 0x06, 3500 //changed from 3000
 #define BREATHING 0x07, 8500
 #define NO_MERCY 0x08, 6000
-#define SCREAM1 0x09, 4000
-#define SCREAM2 0x0A, 3000
-#define SCREAM_FEMALE 0x0B, 2000
+#define SCREAM1 0x09, 4000 //4500
+#define SCREAM2 0x0A, 3000 //3500
+#define SCREAM_FEMALE 0x0B, 2000 //2500
 #define MEEP1 0x0C, 1000
 #define MEEP2 0x0D, 1000
 #define MEEP3 0x0E, 1000
-#define SEE_YOU 0x0F, 1500
+#define SEE_YOU 0x0F, 1500 //2000
 #define BURP1 0x10, 1000
 #define BURP2 0x11, 1000
 #define BURP3 0x12, 1000
@@ -85,39 +85,37 @@ This program is free software: you can redistribute it and/or modify
 #define SEX5 0x20, 1000
 #define SEX6 0x21, 1500
 #define BALLS 0x22, 1000
-#define ZOMBIE1 0x23, 1500
-#define ZOMBIE2 0x24, 1500
+#define ZOMBIE1 0x23, 1500 //2
+#define ZOMBIE2 0x24, 1500 //2
 #define F_CK 0x25, 1000
-#define ZOMBIE3 0x26, 1500
+#define ZOMBIE3 0x26, 1500 //2
 #define SH_T 0x27, 1000
 #define DOOR 0x28, 6500
 #define CHALKBOARD 0x29, 4000
-#define CRICKET 0x2A, 3500
+#define CRICKET 0x2A, 3500 //4
 #define WILHELM 0x2B, 1500
-#define BABY 0x2C, 3500
+#define BABY 0x2C, 3500 
 #define SNAKE 0x2D, 13000
-#define WEATHER 0x2E, 2000
+#define WEATHER 0x2E, 3000 //3
 #define RATS 0x2F, 4000
 #define MOSQUITO 0x30, 11000
 #define SMOKE 0x31, 500
-#define GRUDGE 0x32, 10500
+#define GRUDGE 0x32, 10500 //11
 #define FROG 0x33, 6000
 #define SCREAM_GIRL 0x34, 2500
 #define MOMMY 0x35, 5500
 #define KNOCK 0x36, 8000
-#define FOOT_STEPS 0x37, 10000 //Timings not listed...
-#define RED_ALERT 0x38,3750  //The timing maybe off for this one too
-#define HEADLIGHTS 0x39, 10000 //the timing probably is off for this one
+#define FOOT_STEPS 0x37, 10000 
+#define RED_ALERT 0x38,3750  
+#define HEADLIGHTS 0x39, 4000 
 
-extern int timings[]; // = {4250, 4500, 3000, 10000,13500,5000,3000,8500,6000,4000,3000,2000,1000,1000,1000,1500,1000,1000,1000,1000,1000,1000,1000,1000,1000,1000,1000,1000,1000,1000,1000,1000,1000,1500,1000,1500,1500,1000,1500,1000,6500,4000,3500,1500,3500,13000,2000,4000,11000,500,10500,6000,2500,5500,7000,3000,2500};
-
+extern int timings[]; 
 
 class troll {
 private:
     bool _SPEAKER; //IF we are going to use the internal or external speaker - changes how ramp down is used 
     
 public:
-//int waits[58] = {4250, 4500, 3000, 10000,13500,5000,3000,8500,6000,4000,3000,2000,1000,1000,1000,1500,1000,1000,1000,1000,1000,1000,1000,1000,1000,1000,1000,1000,1000,1000,1000,1000,1000,1500,1000,1500,1500,1000,1500,1000,6500,4000,3500,1500,3500,13000,2000,4000,11000,500,10500,6000,2500,5500,7000,3000,2500};
 
 troll(bool SPEAKER);
 void begin();
