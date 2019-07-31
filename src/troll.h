@@ -3,7 +3,7 @@
 by Patrick Thomas Mitchell
 http://www.engineeringshock.com/the-troll-project-page.html
 
-Library version 1.0.8 July 5, 2019 by LeRoy Miller
+Library version 1.0.9 July 30, 2019 by LeRoy Miller
 
 If you find this or any of my projects useful or enjoyable please support me.  
 Anything I do get goes to buy more parts and make more/better projects.  
@@ -123,6 +123,7 @@ void sound(int value, int wait);
 int button();
 int readSwitch();
 int externalTrigger();
+void setAtten(int n); //Rusty Haddock code shared from Kickstarter
 };
 
 #endif

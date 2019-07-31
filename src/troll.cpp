@@ -3,7 +3,7 @@
 by Patrick Thomas Mitchell
 http://www.engineeringshock.com/the-troll-project-page.html
 
-Library version 1.0.8 July 5, 2019 by LeRoy Miller
+Library version 1.0.9 July 30, 2019 by LeRoy Miller
 
 If you find this or any of my projects useful or enjoyable please support me.  
 Anything I do get goes to buy more parts and make more/better projects.  
@@ -38,7 +38,7 @@ int timings[58] = {4250, 4500, 4000, 10000,13500,5000,3500,8500,6000,4000,3000,2
 
 troll::troll(bool SPEAKER) {
 _SPEAKER = SPEAKER;
-
+troll::setAtten(0);
 }
 
 void troll::begin() { 
@@ -114,4 +114,14 @@ int temp = 0;
     temp = temp + 1;
   }
   return temp;
+}
+
+void troll::setAtten(int n) { //Rusty Haddock shared code on Kickstarter
+// Sets attenuation (n=0 high volume, n=15 lowest volume)
+
+digitalWrite(CS, LOW);
+SPI.transfer(0x44);
+SPI.transfer(n & 15);
+digitalWrite(CS, HIGH);
+
 }
