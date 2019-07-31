@@ -30,6 +30,7 @@ V1.0.4a/1.0.5 June 28 - July 2, 2019 - Added extra example for using LBT over I2
 V1.0.6 July 2, 2019 - Updated External Trigger Example, added externalTrigger() function to library.  
 V1.0.7 July 3/July 4, 2019 - Added Spooky Demo/Example, added example of using PWM on the External Trigger Pin  
 V1.0.8 July 5 - changed timings in library, removed some code not used.  
+v1.0.9 July 31 added setAtten() and attenution demo code from code shared on Kickstarter by Rusty Haddock  
 
 ## Contributing
 
