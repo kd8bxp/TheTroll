@@ -38,7 +38,7 @@ int timings[58] = {4250, 4500, 4000, 10000,13500,5000,3500,8500,6000,4000,3000,2
 
 troll::troll(bool SPEAKER) {
 _SPEAKER = SPEAKER;
-troll::setAtten(0);
+//troll::setAtten(0);
 }
 
 void troll::begin() { 
