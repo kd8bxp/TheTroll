@@ -1,4 +1,5 @@
 # The Troll Library
+[![Compile Examples](https://github.com/kd8bxp/TheTroll/workflows/Compile%20Examples/badge.svg)](https://github.com/kd8bxp/TheTroll/actions?workflow=Compile+Examples)
 
 "The Troll" Arduino compatible practical joke machine!  
 by Patrick Thomas Mitchell  
